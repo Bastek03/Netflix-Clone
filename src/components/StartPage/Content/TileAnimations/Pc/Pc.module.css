@@ -1,0 +1,19 @@
+.backImg {
+    height: 400px;
+    z-index: 10;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    top: 30px;
+    z-index: 1;
+}
