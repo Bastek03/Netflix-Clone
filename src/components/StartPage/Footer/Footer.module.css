@@ -1,0 +1,77 @@
+.container {
+    border-top: 8px solid #222;
+    /* width: 80%; */
+    background-color: black;
+    color: grey;
+}
+
+.wrapper {
+    width: 60%;
+    padding: 40px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.listDiv > ul {
+    width: 25%;
+    list-style: none;
+    padding-left: 0;
+}
+
+.listDiv > ul > li {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+
+.listDiv > ul > li > span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.customSelect {
+    width: 15%;
+    height: 5%;
+    position: relative;
+    margin-right: 15px; 
+    margin-bottom: 30px;
+}
+
+.customSelect > select {
+    padding: 15px 30% 15px 25px;
+    background-color: black;
+    color: grey;
+    border-radius: 4px;
+    appearance: none;
+    width: 100%;
+    border: 1px solid grey;
+    font-size: 16px;
+    text-align: right;
+}
+
+.customSelect:before {
+    position: absolute;
+    content: '\1F310';
+    line-height: 300%;
+    display: inline-block;
+    left: 8px;
+}
+
+.customSelect:after {
+    position: absolute;
+    content: '\1F893';
+    color: grey;
+    font-size: 30px;
+    top: 30%;
+    display: inline-block;
+    right: 5px;   
+    pointer-events: none;
+}
