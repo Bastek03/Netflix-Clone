@@ -13,7 +13,7 @@ const Tv = () => {
             <div style={{position: 'relative'}}>
                 <img src={tvImage} className={styles.img} alt="tv"></img>
                 <div className={styles.videoWrap}>
-                    <video src={tvVideo} className={styles.video} muted="true" loop="true" autoPlay="true"></video>
+                    <video src={tvVideo} className={styles.video} muted={true} loop={true} autoPlay={true}></video>
                 </div>
             </div>
 

@@ -4,7 +4,7 @@ import styles from './Tile.module.css';
 const Tile = props => {
 
     const order = props.order;
-    console.log(typeof(order));
+    // console.log(typeof(order));
 
 
     return(

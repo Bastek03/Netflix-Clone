@@ -2,22 +2,11 @@ import React, { Component } from "react";
 import styles from './Header.module.css';
 import netflixLogo from './netflix_logo.png';
 import { Link } from 'react-router-dom';
-
+import StartInput from "../StartInput/StartInput";
 
 class Header extends Component {
 
     render(){
-
-        const movePlaceholder = () => {
-            let placeholder = document.getElementById('floatingPlaceholder');
-            placeholder.classList.add(styles.floatingPlaceholderFocus);
-        }
-
-        const backPlaceholder = () => {
-            let placeholder = document.getElementById('floatingPlaceholder');
-            placeholder.classList.remove(styles.floatingPlaceholderFocus);
-        }
-
 
         return(
 
@@ -45,17 +34,8 @@ class Header extends Component {
                 <div className={styles.startContainer}>
                     <h1>Nieograniczona oferta <br></br> filmów, seriali, programów <br></br>i nie tylko.</h1>
                     <h2>Oglądaj wszędzie. Anuluj w każdej chwili.</h2>
-                    
-                    <p>Zaczynamy oglądać? Wprowadź adres e-mail, aby utworzyć lub odnowić konto.</p>
-                    <div className={styles.startForm}>
 
-                        <span id="floatingPlaceholder" className={styles.floatingPlaceholder}>Adres e-mail</span>
-
-                        <input onFocus={movePlaceholder} onBlur={backPlaceholder} autoComplete="email" type="text" className={styles.startInput}></input>
-
-                        <button className={styles.startButton}>Rozpocznij &#62;</button>
-
-                    </div>
+                    <StartInput id={0}/>
 
                 </div>
 

@@ -12,7 +12,7 @@ const Pc = () => {
         <div className={styles.container}>
             <img className={styles.backImg} src={backgroundPng} alt=""></img>
 
-            <video className={styles.video} src={backgroundVid} loop="true" autoPlay></video>
+            <video className={styles.video} src={backgroundVid} loop={true} autoPlay></video>
         </div>
     )
 }
