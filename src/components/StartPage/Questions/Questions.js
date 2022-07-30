@@ -105,7 +105,11 @@ const Questions = () => {
 
             </ul>
 
-            <StartInput id={1}/>
+            
+            <div>
+                <StartInput id={1}/>
+            </div>
+            
                 
         </div>
     )

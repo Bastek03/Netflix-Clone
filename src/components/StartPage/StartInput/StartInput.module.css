@@ -5,12 +5,7 @@
 
 .startForm {
     display: flex;
-    position: relative;
-    height: 70px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    /* padding-bottom: 80px; */
+    justify-content: center;
 }
 
 .error {
@@ -24,15 +19,18 @@
 }
 
 .startInput {
-    width: 80%;
     font-size: 16px;
     outline: none;
     padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.floatingLabelWrapper {
+    position: relative;
 }
 
 .floatingPlaceholder {
     position: absolute;
-    top: 25px;
     left: 10px;
     color: grey;
     pointer-events: none;
@@ -46,15 +44,162 @@
     font-weight: bold;
 }
 
-
 .startButton {
-    width: 35%;
+    border-left: 1px solid #333;
+    margin-left: 1px;
     background-color: #E50914;
     color: white;
-    font-size: 30px;
+    font-size: 1.5rem;
     border: none;
+    box-sizing: border-box;
 }
 
 .startButton:hover {
     background-color: rgb(255, 33, 33);
 }
+
+.container > p {
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1450px){
+    .container > p {
+        font-size: 1.2rem;
+        max-width: none;
+        font-weight: 400;
+    }
+    .startInput {
+        min-width: 500px;
+        height: 70px;
+    }
+    .startButton {
+        min-width: 240px;
+        height: 70px;
+    }
+    .floatingPlaceholder {
+        top: 25px;
+    }
+    .floatingPlaceholderFocus {
+        top: 3px;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1449px){
+    .container > p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .startInput {
+        min-width: 450px;
+        height: 60px;
+    }
+    .startButton {
+        min-width: 200px;
+        height: 60px;
+    }
+    .floatingPlaceholder {
+        top: 20px;
+    }
+    .floatingPlaceholderFocus {
+        top: 3px;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 950px){
+    .container > p {
+        font-size: 23px;
+        font-weight: 400;
+        padding: 0 10%;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+    .floatingPlaceholder {
+        top: 20px;
+    }
+    .floatingPlaceholderFocus {
+        top: 3px;
+    }
+    .startForm {
+        flex-direction: column;
+        align-items: center;
+    }
+    .startInput {
+        min-width: 500px;
+        height: 60px;
+    }
+    .startButton {
+        margin: 15px;
+        min-width: 125px;
+        height: 40px;
+        border-radius: 3px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 739px){
+    .container > p {
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 400px;
+        padding: 0 10%;
+        margin-bottom: 10px;
+    }
+    .floatingPlaceholder {
+        top: 12px;
+    }
+    .floatingPlaceholderFocus {
+        top: 3px;
+    }
+    .startForm {
+        flex-direction: column;
+        align-items: center;
+    }
+    .startInput {
+        min-width: 500px;
+        height: 48px;
+        padding: 10px 10px 0;
+    }
+    .startButton {
+        margin: 15px;
+        min-width: 125px;
+        height: 40px;
+        border-radius: 3px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container > p {
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 400px;
+        padding: 0 10%;
+        margin-bottom: 15px;
+    }
+    .floatingPlaceholder {
+        top: 12px;
+    }
+    .floatingPlaceholderFocus {
+        top: 3px;
+    }
+    .startForm {
+        flex-direction: column;
+        align-items: center;
+    }
+    .floatingLabelWrapper {
+        width: 100%;
+    }
+    .startInput {
+        width: 100%;
+        height: 48px;
+        padding: 10px 10px 0;
+    }
+    .startButton {
+        margin: 15px;
+        min-width: 125px;
+        height: 40px;
+        border-radius: 3px;
+        font-size: 1rem;
+    }
+}   

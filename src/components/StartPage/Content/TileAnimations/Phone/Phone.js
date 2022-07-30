@@ -17,7 +17,7 @@ const Phone = () => {
                 
                 <div className={styles.downDiv}>
 
-                    <img style={{margin: '10px', height: '80px'}} src={mobile} alt=""></img>
+                    <img className={styles.mobilePhoto} src={mobile} alt=""></img>
 
                     <h4>Pobieranie...</h4>
                 

@@ -3,11 +3,12 @@ import styles from './Header.module.css';
 import netflixLogo from './netflix_logo.png';
 import { Link } from 'react-router-dom';
 import StartInput from "../StartInput/StartInput";
+// import $ from 'jquery';
 
 class Header extends Component {
 
     render(){
-
+        
         return(
 
             <div className={styles.wrapper}>
@@ -32,7 +33,9 @@ class Header extends Component {
 
 
                 <div className={styles.startContainer}>
-                    <h1>Nieograniczona oferta <br></br> filmów, seriali, programów <br></br>i nie tylko.</h1>
+
+                    <h1>Nieograniczona oferta filmów, seriali, programów i nie tylko.</h1>
+
                     <h2>Oglądaj wszędzie. Anuluj w każdej chwili.</h2>
 
                     <StartInput id={0}/>
