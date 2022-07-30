@@ -1,7 +1,7 @@
 .wrapper {
     background-image: url('netflix_background.jpg');
     background-size: cover;
-    padding-bottom: 150px;
+    padding-bottom: 15%;
     -webkit-box-shado: inset 0px 330px 300px -50px rgba(0, 0, 0, 0.8), inset 0px -330px 300px 50px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: inset 0px 330px 300px -50px rgba(0, 0, 0, 0.8), inset 0px -330px 300px 50px rgba(0, 0, 0, 0.8);
     box-shadow: inset 0 330px 300px -50px rgba(0, 0, 0, 0.8), inset 0 -330px 300px 50px rgba(0, 0, 0, 0.8);
@@ -12,13 +12,7 @@
     display: grid;
     grid-template-columns: auto 120px 200px;
     height: 100px;
-}
-
-.logo {
-    height: 53px;
-    width: 180px;
-    margin-top: 25px;
-    margin-left: 50px;
+    align-items: center;
 }
 
 select {
@@ -79,8 +73,8 @@ select {
 }
 
 .startContainer {
-    width: 100%;
-    margin-top: 7%;
+    width: 90%;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -89,19 +83,101 @@ select {
 
 .startContainer > h1 {
     font-size: 4rem;
-    font-weight: 700;
-    margin: 0;
+    margin: 0 auto;
+    line-height: 1.1;
 }
 
 .startContainer > h2 {
-    font-size: 1.5rem;
-    margin: 20px 0;
-    font-weight: bold;
+    font-weight: 400;
+    margin: 1rem auto;
+} 
+
+.logo {
+    margin-left: 50px;
 }
 
-.startContainer > p {
-    font-size: 1.3rem;
-    margin-top: 0;
+@media screen and (min-width: 1450px){
+    .logo {
+        height: 2.8125rem;
+        width: 10.4375rem;
+    }
+    .startContainer > h1 {
+        font-size: 4rem;
+        max-width: 820px;
+    }
+    
+    .startContainer > h2 {
+        font-size: 1.625rem;
+    }
+    .startContainer {
+        margin-top: 8%;
+    }
+    .mobileHeader {
+        display: none;
+    }
+    .desktopHeader {
+        display: block;
+    }
+    .wrapper {
+        padding-bottom: 7%;
+    }
 }
 
+@media screen and (min-width: 551px) and (max-width: 1449px){
+    .logo {
+       height: 2.25rem;
+       width: 8.375rem;
+    }
+    .startContainer > h1 {
+        font-size: 3.125rem;
+        max-width: 640px;
+    }
+    .startContainer > h2 {
+        font-size: 1.625rem;
+    }
+    .mobileHeader {
+        display: none;
+    }
+    .desktopHeader {
+        display: block;
+    }
+}
 
+@media screen and (max-width: 550px){
+    .desktopHeader {
+        display: none;
+    }
+    .mobileHeader {
+        display: block;
+    }
+    .header {
+        grid-template-columns: auto 100px 130px;
+
+    }
+    .logo {
+        height: 1.7rem;
+        width: auto;
+        margin-left: 25px;
+    }
+    .loginButton{
+        padding: 5px;
+        
+    }
+    select {
+        padding: 5px 5px 5px 25px;
+    }
+    .customSelect {
+        margin-right: 0;
+    }
+    .customSelect:after, .customSelect:before{
+        line-height: 25px;
+    }
+
+    .startContainer > h1 {
+        font-size: 1.75rem;
+    }
+
+    .startContainer > h2 {
+        font-size: 1.125rem;
+    }
+}   

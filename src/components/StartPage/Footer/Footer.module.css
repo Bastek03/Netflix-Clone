@@ -1,16 +1,14 @@
 .container {
     border-top: 8px solid #222;
-    /* width: 80%; */
     background-color: black;
     color: grey;
 }
 
 .wrapper {
-    width: 60%;
-    padding: 40px;
+    width: 50%;
+    padding: 2rem;
     padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .listDiv {
@@ -21,14 +19,17 @@
 }
 
 .listDiv > ul {
-    width: 25%;
     list-style: none;
     padding-left: 0;
 }
 
 .listDiv > ul > li {
     font-size: 13px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    display: inline-block;
+    vertical-align: top;
+    /* min-width: 100px; */
+    width: 25%;
 }
 
 
@@ -74,4 +75,53 @@
     display: inline-block;
     right: 5px;   
     pointer-events: none;
+}
+
+@media screen and (min-width: 1201px){
+    .wrapper {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1200px){
+
+    .wrapper {
+        width: 85%;
+    }
+
+    .listDiv > ul > li {
+        width: 25%;
+    }
+
+    .customSelect { 
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width: 739px){
+    .wrapper {
+        width: 80%;
+    }
+
+    .listDiv > ul > li {
+        width: 33%;
+    }
+
+    .customSelect { 
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:499px){
+    .wrapper {
+        width: 80%;
+    }
+
+    .listDiv > ul > li {
+        width: 50%;
+    }
+
+    .customSelect { 
+        width: 40%;
+    }
 }

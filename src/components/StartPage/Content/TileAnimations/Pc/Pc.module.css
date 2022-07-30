@@ -17,3 +17,18 @@
     top: 30px;
     z-index: 1;
 }
+
+@media screen and (max-width: 950px){
+
+    .backImg {
+        width: 90%;
+        height: 95%;
+    }
+
+    .video {
+        height: 55%;
+        width: 55%;
+        
+    }
+
+}

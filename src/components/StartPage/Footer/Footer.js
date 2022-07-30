@@ -19,24 +19,17 @@ const Footer = () => {
                         <li><span>Jak oglądać?</span></li>
                         <li><span>Informacje o firmie</span></li>
                         <li><span>Informacje prawne</span></li>
-                    </ul>
 
-                    <ul>
                         <li><span>Centrum pomocy</span></li>
                         <li><span>Praca</span></li>
                         <li><span>Warunki korzystania</span></li>
                         <li><span>Skontaktuj się z nami</span></li>
                         <li><span>Tylko na Netflix</span></li>
-                    </ul>
-
-                    <ul>
                         <li><span>Konto</span></li>
                         <li><span>Zrealizuj karty podarunkowe</span></li>
                         <li><span>Prywatność</span></li>
                         <li><span>Test prędkości połączenia</span></li>
-                    </ul>
 
-                    <ul>
                         <li><span>Media Center</span></li>
                         <li><span>Kup karty podarunkowe</span></li>
                         <li><span>Ustawienia plików cookie</span></li>

@@ -5,24 +5,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .container > h1 {
     margin-top: 0;
     padding-top: 50px;
-    font-size: 4rem;
+    font-size: 3.125rem;
 }
 
 .container > ul {
     list-style: none;
-    width: 60%;
+    width: 70%;
+    max-width: 815px;
     padding-left: 0;
     padding-bottom: 30px;
+    margin: 2em auto;
 }
 
 .container > ul > li {
     background-color: #333;
-    margin-top: 10px;
+    margin: 0 0 8px;
 }
 
 .container > ul > li > button {
@@ -32,7 +35,7 @@
     color: white;
     text-align: left;
     padding: 20px 20px;
-    font-size: 2rem;
+    font-size: 1.625rem;
     cursor: pointer;
     border-bottom: 1px solid black;
     display: flex;
@@ -53,9 +56,9 @@
 
 .txt {
     display: inline-block;
-    padding: 20px;
+    padding: 1.2rem;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.625rem;
 }
 
 .svgClose {
@@ -67,3 +70,41 @@
     height: 25px;
 }
 
+
+@media screen and (min-width: 551px) and (max-width: 950px){
+    .container > h1 {
+        font-size: 2.5rem;
+    }
+
+    .container > ul {
+        width: 80%;
+        max-width: 815px;
+    }
+
+    .container > ul > li > button { 
+        font-size: 1.25rem;
+    }
+
+    .txt {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container > h1 {
+        font-size: 1.625rem;
+    }
+
+    .container > ul {
+        width: 100%;
+    }
+
+    .container > ul > li > button { 
+        font-size: 1.125rem;
+    }
+
+    .txt {
+        font-size: 1.125rem;
+    }
+
+}

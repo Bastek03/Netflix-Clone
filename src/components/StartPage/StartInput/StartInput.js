@@ -37,19 +37,19 @@ const StartInput = props => {
 
     }
 
-    const checkEmail = () => {
-        // let value = document.getElementsByClassName(styles.startInput);
-        
-    }
-
     return(
         <div className={styles.container}>
+
             <p>Zaczynamy oglądać? Wprowadź adres e-mail, aby utworzyć lub odnowić konto.</p>
+
             <div className={styles.startForm}>
 
-                <span id="floatingPlaceholder" className={styles.floatingPlaceholder}>Adres e-mail</span>
-
-                <input onFocus={movePlaceholder} onBlur={backPlaceholder} onChange={checkEmail} autoComplete="email" type="text" className={styles.startInput}></input>
+                <div className={styles.floatingLabelWrapper}>
+                    <input onFocus={movePlaceholder} onBlur={backPlaceholder} autoComplete="email" type="text" className={styles.startInput}></input>
+                    
+                    <span id="floatingPlaceholder" className={styles.floatingPlaceholder}>Adres e-mail</span>
+                </div>
+                
                 <button className={styles.startButton}>Rozpocznij &#62;</button>
 
             </div>
