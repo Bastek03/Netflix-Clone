@@ -9,8 +9,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route index element={<Start />} />
-          <Route path="/login" element={<Login />}>
+          <Route path="/Netflix-Clone/start" element={<Start />} />
+          <Route path="/Netflix-Clone/login" element={<Login />}>
         </Route>
       </Routes>
     </BrowserRouter>

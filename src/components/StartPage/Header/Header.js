@@ -24,7 +24,7 @@ class Header extends Component {
                         </select>
                     </div>
 
-                    <Link to='/login' className={styles.loginButton}>
+                    <Link to='/Netflix-Clone/login' className={styles.loginButton}>
                         Zaloguj się
                     </Link>
                     
