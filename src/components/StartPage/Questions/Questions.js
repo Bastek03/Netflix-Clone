@@ -106,7 +106,7 @@ const Questions = () => {
             </ul>
 
             
-            <div>
+            <div style={{margin:'0 5%'}}>
                 <StartInput id={1}/>
             </div>
             
