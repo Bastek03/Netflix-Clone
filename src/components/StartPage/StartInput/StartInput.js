@@ -66,14 +66,15 @@ const StartInput = props => {
                     <input onFocus={movePlaceholder} onBlur={backPlaceholder} onChange={inputValueHandler} autoComplete="on" type="email" className={styles.startInput}></input>
                     
                     <span id="floatingPlaceholder" className={styles.floatingPlaceholder}>Adres e-mail</span>
+                    <div className={styles.error}>
+                        <span>error</span>
+                    </div>
                 </div>
                 
                 <button onClick={startButton} className={styles.startButton}>Rozpocznij &#62;</button>
 
             </div>
-            <div className={styles.error}>
-                <span>error</span>
-            </div>
+
         </div>
     )
 }
