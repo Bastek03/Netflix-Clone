@@ -1,33 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './StartInput.module.css';
+import Swal from 'sweetalert2';
 
 const StartInput = props => {
+
+    const [inputValue, setInputValue] = useState('');
+
+    const inputValueHandler = event => {
+        let value = event.target.value;
+        setInputValue(value);
+    }
 
     const movePlaceholder = () => {
         let placeholder = document.getElementsByClassName(styles.floatingPlaceholder);
         placeholder[props.id].classList.add(styles.floatingPlaceholderFocus);
     }
-    
-    let attempt = 0;
+    let emailOk = false;
     const backPlaceholder = () => {
-
         let value = document.getElementsByClassName(styles.startInput);
-        if (value[props.id].value !== "") {
-            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value[props.id].value)) {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+        if (value[props.id].value !== "") {
+            if (value[props.id].value.match(validRegex)) {
                 let field = document.getElementsByClassName(styles.error);
                 field[props.id].style.visibility = 'hidden';
+                emailOk = true;
             }else {
                 const error = "Wprowadź prawidłowy adres e-mail";
-                attempt = 1;
                 let field = document.getElementsByClassName(styles.error);
                 field[props.id].textContent = error;
                 field[props.id].style.visibility = 'visible';
             }
 
         }else {
-            console.log(attempt);
-            if (attempt === 1) {
+            if (value.length <= 5) {
                 let field = document.getElementsByClassName(styles.error);
                 field[props.id].textContent = "Adres e-mail jest wymagany.";
             }
@@ -35,6 +41,18 @@ const StartInput = props => {
             placeholder[props.id].classList.remove(styles.floatingPlaceholderFocus);
         }
 
+    }
+
+    const startButton = () => {
+        if (emailOk) {
+            Swal.fire({
+                title: 'Great!',
+                text: inputValue,
+                icon: 'success',
+                timer: 1500,
+                showConfirmButton: false
+            })
+        }
     }
 
     return(
@@ -45,15 +63,17 @@ const StartInput = props => {
             <div className={styles.startForm}>
 
                 <div className={styles.floatingLabelWrapper}>
-                    <input onFocus={movePlaceholder} onBlur={backPlaceholder} autoComplete="email" type="text" className={styles.startInput}></input>
+                    <input onFocus={movePlaceholder} onBlur={backPlaceholder} onChange={inputValueHandler} autoComplete="on" type="email" className={styles.startInput}></input>
                     
                     <span id="floatingPlaceholder" className={styles.floatingPlaceholder}>Adres e-mail</span>
                 </div>
                 
-                <button className={styles.startButton}>Rozpocznij &#62;</button>
+                <button onClick={startButton} className={styles.startButton}>Rozpocznij &#62;</button>
 
             </div>
-                <span className={styles.error}>error</span>
+            <div className={styles.error}>
+                <span>error</span>
+            </div>
         </div>
     )
 }

@@ -37,9 +37,11 @@ class Header extends Component {
                     <h1>Nieograniczona oferta filmów, seriali, programów i nie tylko.</h1>
 
                     <h2>Oglądaj wszędzie. Anuluj w każdej chwili.</h2>
+                    
+                </div>
 
+                <div className={styles.startInputWrapper}>
                     <StartInput id={0}/>
-
                 </div>
 
             </div>

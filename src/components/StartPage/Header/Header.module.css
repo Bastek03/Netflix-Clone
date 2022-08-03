@@ -27,7 +27,9 @@ select {
 
 .customSelect {
     position: relative;
-    grid-column: 2;
+    display: inline-flex;
+    align-items: center;
+    /* grid-column: 2; */
     margin-right: 15px; 
     align-self: center;
 }
@@ -35,19 +37,18 @@ select {
 .customSelect:before {
     position: absolute;
     content: '\1F310';
-    line-height: 37px;
+    /* line-height: 100%; */
     display: inline-block;
     left: 5px;
 }
 
 .customSelect:after {
     position: absolute;
-    content: '\1F893';
+    content: '\25BC';
     color: white;
-    font-size: 30px;
-    top: 10px;
+    font-size: 12px;
     display: inline-block;
-    right: 5px;   
+    right: 10px;   
     pointer-events: none;
 }
 
@@ -72,8 +73,13 @@ select {
     background-color: rgb(185, 29, 29);
 }
 
+.startInputWrapper {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
 .startContainer {
-    width: 90%;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
