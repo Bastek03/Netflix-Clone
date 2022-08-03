@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Netflix-Clone/static/css/main.10232a2a.css",
-    "main.js": "/Netflix-Clone/static/js/main.96afeb98.js",
+    "main.css": "/Netflix-Clone/static/css/main.088340c2.css",
+    "main.js": "/Netflix-Clone/static/js/main.b0f83c2d.js",
     "static/media/video.m4v": "/Netflix-Clone/static/media/video.053994fc9a5da7a97b5b.m4v",
     "static/media/devices.m4v": "/Netflix-Clone/static/media/devices.b27bb59e747d5b567095.m4v",
     "static/media/kids.png": "/Netflix-Clone/static/media/kids.7e9c0c2fccea936cef07.png",
@@ -14,11 +14,11 @@
     "static/media/tv.png": "/Netflix-Clone/static/media/tv.0049bc70babc1f94cf88.png",
     "static/media/cross-svgrepo-com.svg": "/Netflix-Clone/static/media/cross-svgrepo-com.d8b419e657f4ca056f07d29852112186.svg",
     "index.html": "/Netflix-Clone/index.html",
-    "main.10232a2a.css.map": "/Netflix-Clone/static/css/main.10232a2a.css.map",
-    "main.96afeb98.js.map": "/Netflix-Clone/static/js/main.96afeb98.js.map"
+    "main.088340c2.css.map": "/Netflix-Clone/static/css/main.088340c2.css.map",
+    "main.b0f83c2d.js.map": "/Netflix-Clone/static/js/main.b0f83c2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.10232a2a.css",
-    "static/js/main.96afeb98.js"
+    "static/css/main.088340c2.css",
+    "static/js/main.b0f83c2d.js"
   ]
 }
